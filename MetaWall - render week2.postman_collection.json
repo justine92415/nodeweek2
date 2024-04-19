@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "7ba807da-5de1-444a-9fbb-6ebd843c9ee1",
+		"name": "MetaWall - render week2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23754648"
+	},
+	"item": [
+		{
+			"name": "取得所有貼文",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://nodeweek2.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"nodeweek2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增一筆貼文",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"content\":\"測試文章-render\",\n    \"name\":\"王大明\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodeweek2.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"nodeweek2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯一筆貼文",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"content\":\"測試文章-render\",\n    \"name\":\"王大明 edit\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodeweek2.onrender.com/posts/662274457c63fc1256b526b7",
+					"protocol": "https",
+					"host": [
+						"nodeweek2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts",
+						"662274457c63fc1256b526b7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除一筆貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodeweek2.onrender.com/posts/65df2ef9db1167534b66ab02",
+					"protocol": "https",
+					"host": [
+						"nodeweek2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts",
+						"65df2ef9db1167534b66ab02"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodeweek2.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"nodeweek2",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
